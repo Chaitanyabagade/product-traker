@@ -4,16 +4,10 @@ const fs = require('fs');
 puppeteer.use(StealthPlugin());
 
 const urls = [
-  'https://www.amazon.in/Electronicspices-Digital-Helicopter-Airplane-Controls/dp/B08XZQY94P/ref=asc_df_B08XZQY94P?mcid=6dc732c66f13339b9e48178d3e870474&tag=googleshopdes-21&linkCode=df0&hvadid=709962744920&hvpos=&hvnetw=g&hvrand=2783992985261936378&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9302378&hvtargid=pla-1358993154689&gad_source=1&th=1',
-  'https://www.amazon.in/roboCraze-Arduino-Development-Board-cable/dp/B07G4C4D8F/ref=pd_bxgy_thbs_d_sccl_2/258-9423553-4715839?pd_rd_w=2z2tP&content-id=amzn1.sym.d1afc5d3-2e83-45f5-8382-2dc0d946ef8f&pf_rd_p=d1afc5d3-2e83-45f5-8382-2dc0d946ef8f&pf_rd_r=DQ4KWG3CWNH75HAQ1AM7&pd_rd_wg=3eML8&pd_rd_r=4b7883c2-3945-4c55-bac0-c7b3637fac25&pd_rd_i=B07G4C4D8F&psc=1'
-];
-/*
  'https://robu.in/product/cytron-lcd-keypad-shield-high-quality/',
  'https://www.flyrobo.in/dc-step-down-qc2.0-qc3.0-usb-fast-charging-module',
  'https://robocraze.com/products/hc-sr-04-ultrasonic-sensor'
 ];
-*/
-
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 async function scrapeOnce() {
