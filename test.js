@@ -3,7 +3,7 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
 puppeteer.use(StealthPlugin());
 
-const urls = []
+const urls = [
  'https://www.flipkart.com/arduino-r3-ch40-micro-controller-board-electronic-hobby-kit/p/itm75bad445346cb',
  'https://www.amazon.in/roboCraze-Arduino-Development-Board-cable/dp/B07G4C4D8F/ref=asc_df_B07G4C4D8F',
 ];

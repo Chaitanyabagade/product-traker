@@ -4,17 +4,12 @@ const fs = require('fs');
 puppeteer.use(StealthPlugin());
 
 const urls = [
-<<<<<<< HEAD
- 'https://robu.in/product/cytron-lcd-keypad-shield-high-quality/',
- 'https://www.flyrobo.in/dc-step-down-qc2.0-qc3.0-usb-fast-charging-module',
- 'https://robocraze.com/products/hc-sr-04-ultrasonic-sensor'
-];
-=======
- 'https://robu.in/product/hc-sr04-ultrasonic-range-finder/?gad_source=1&gad_campaignid=21296336107&gbraid=0AAAAADvLFWcId0kcQoZ5G7yTCBwZ-AM90&gclid=Cj0KCQjwjJrCBhCXARIsAI5x66XB6Y8Oc-LVmID4Ri_bAZb2XqpQLGnjs2WxDxdm8qMKhrtPa54Nhp8aAgOyEALw_wcB'
-];
+'https://robu.in/product/esp32-38pin-development-board-wifibluetooth-ultra-low-power-consumption-dual-core/?gad_source=1&gad_campaignid=21296336107&gbraid=0AAAAADvLFWcId0kcQoZ5G7yTCBwZ-AM90&gclid=Cj0KCQjwjJrCBhCXARIsAI5x66U1eq0zXoBuqR-co1CUKicJ99hmuI2GFzNnviJqzo5MPWjCkMnDRdMaAsNsEALw_wcB',
+'https://www.flyrobo.in/mpu6500-gy-6500-6dof-6-axis-accelerometer-gyro-sensor?tracking=ads&tracking=4a9a9a&gad_source=1&gad_campaignid=17426303996&gbraid=0AAAAAC6AkE_J-IhY8AoMDrZILBUTjtfBR&gclid=CjwKCAjwr5_CBhBlEiwAzfwYuLAqf5BRnpkEM8rPTbI8TnrfUuYeFlODy5XXEn4wTt96R1J-pac_-hoCsGMQAvD_BwE',
+'https://robocraze.com/products/mpu-6050-triple-axis-accelerometer-gyroscope-module?variant=40192322011289&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&campaignid=21596928874&adgroupid=&keyword=&device=c&gad_source=1&gad_campaignid=21596930350&gbraid=0AAAAADgHQvbeFfDunjoM48YseNJqX44sP&gclid=CjwKCAjwr5_CBhBlEiwAzfwYuGYa44DsoukyWZraCxQJ9xQL53WC6ryBnNp91kCV9-qW9oJ9kOc7jBoChNEQAvD_BwE',
+'https://www.flipkart.com/ihc-a2212-1000kv-brushless-motor-drone-electronic-components-hobby-kit/p/itm2cc70ab2faa8f?pid=EHKGF58RSMNRF8HW&lid=LSTEHKGF58RSMNRF8HWHFAFX9&marketplace=FLIPKART&cmpid=content_electronic-hobby-kit_22431562759_x_8965229628_gmc_pla&tgi=sem,1,G,11214002,x,,,,,,,c,,,,,,,&entryMethod=22431562759&&cmpid=content_22431562759_gmc_pla&gad_source=1&gad_campaignid=22428048374&gbraid=0AAAAADxRY5-SECYYUT4N_XqqtLoQ-Fxtr&gclid=CjwKCAjwr5_CBhBlEiwAzfwYuFAz8A1FdcTowK_uuV3lPVFn-cUciI6CH3eQu_T-TnVCpHXAuJZg4hoCCqcQAvD_BwE',
+'https://www.amazon.in/A2212-1000-Brushless-Motor-Drone/dp/B0CBQ2R895/ref=asc_df_B0CBQ2R895?mcid=05a1b4f75731384886023ddfed8e0fa9&tag=googleshopdes-21&linkCode=df0&hvadid=709963085501&hvpos=&hvnetw=g&hvrand=2764878810804600553&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9302378&hvtargid=pla-2358746805554&psc=1&gad_source=1'];
 
-
->>>>>>> 6926b4d (now robu.in works)
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 async function scrapeOnce() {
