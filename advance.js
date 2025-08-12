@@ -81,7 +81,7 @@ function getRandomHeaders() {
 }
 
 async function scrapeOnce() {
-  const browser = await puppeteer.launch({ headless: false, args: ['--no-sandbox'] });
+  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
   const results = [];
 
   for (const url of urls) {
