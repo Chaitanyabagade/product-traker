@@ -20,7 +20,7 @@ async function scrapeOnce() {
     const page = await browser.newPage();
     try {
       await page.goto(url, { waitUntil: 'networkidle2' });
-      await delay(3000);
+      await delay(10000);
 
       let title = null, price = null, description = null, availability = 'Unknown';
       const domain = new URL(url).hostname;
