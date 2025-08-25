@@ -204,6 +204,7 @@ async function scrapeOnce() {
 
       results.push({ url, title, price, availability });
       console.log(`✅ Scraped: ${domain}`);
+      console.log({ price, availability });
     } catch (err) {
       console.error(`❌ Error scraping : ${err.message}`);
     }
